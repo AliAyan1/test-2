@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="forms.css"> 
+</head>
+<body>
+
+  <form action="thankyou.html" method="get">
+    <h1>Registration Form</h1>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="full_name" placeholder="Enter your name" required />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter a strong password" required />
+
+    <label>Select Your Class:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="class" value="Class 11" required /> Class 11
+      </label><br />
+      <label>
+        <input type="radio" name="class" value="Class 12" /> Class 12
+      </label>
+    </div>
+
+    <label>Select Your Subjects:</label>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="subjects" value="Chemistry" /> Chemistry
+      </label><br />
+      <label>
+        <input type="checkbox" name="subjects" value="Urdu" /> Urdu
+      </label>
+    </div>
+
+    <label for="city">Select Your City:</label>
+    <select name="city" id="city" required>
+      <option value="" disabled selected>Select city</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Pakistan">Pakistan</option>
+      <option value="Punjab">Punjab</option>
+      <option value="India">India</option>
+    </select>
+
+    <label for="feedback">Your Feedback:</label>
+    <textarea id="feedback" name="feedback" rows="5" placeholder="Enter your valuable feedback..."></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
